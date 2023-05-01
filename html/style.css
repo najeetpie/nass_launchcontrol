@@ -1,0 +1,87 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Outfit:wght@300&family=Varela+Round&display=swap';
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.image-container {
+  position: absolute;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  right: 25%;
+  transform: translateY(-200%);
+  filter: drop-shadow(0px 3px 2px #292929);
+  transition: opacity 1s ease-in-out;
+}
+
+.image-container .image {
+  position: absolute;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  right: 20%;
+  margin: auto;
+  filter: drop-shadow(0px 1px 2px #292929);
+}
+
+.ebrake-image-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+
+.ebrake-image-container .ebrake-image {
+  height: 125px;
+  width: 125px;
+}
+
+.warning {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #ffffff;
+  margin-top: 19px;
+  font-size: 23px;
+  filter: drop-shadow(0px 1px 1px #292929);
+  position: absolute;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gas-image-container {
+  display: flex;
+  position: absolute;
+  height: 100px;
+  width: 400px;
+}
+
+.gas-image {
+  height: 100px;
+  width: 100px;
+}
+
+.gas {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 5px;
+  color: #ffffff;
+  font-size: 23px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0px 2px 1px #292929);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
