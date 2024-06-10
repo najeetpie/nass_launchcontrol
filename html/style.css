@@ -37,6 +37,32 @@ body {
   width: 125px;
 }
 
+.burnout-image-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+
+
+.burnout-image-container .burnout-image {
+  height: 125px;
+  width: 125px;
+}
+
+.bump-image-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+
+
+.bump-image-container .bump-image {
+  height: 125px;
+  width: 125px;
+}
+
 .warning {
   display: flex;
   text-align: center;
