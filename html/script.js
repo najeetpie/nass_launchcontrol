@@ -48,6 +48,11 @@ window.addEventListener('message', function(event) {
     gasimgcont.style.transition = "all 1s ease-in-out";
     notificationSound2.play();
   }, 200);
+  setTimeout(function() {
+    // Hide or remove the notification element
+    gasimgcont.style.opacity = "0";
+    gasimgcont.style.display = "none"; // or removeChild(burnoutImg) if you want to remove the element from the DOM
+  }, 5000); // 5000 milliseconds = 5 seconds
     
 } else if (data.event == "launchControlEBrake") {
   var ebrakeImg = document.getElementById("ebrake-img");
@@ -65,6 +70,55 @@ window.addEventListener('message', function(event) {
     ebrakeImg.style.transition = "all 1s ease-in-out";
     notificationSound2.play();
   }, 200);
+  setTimeout(function() {
+    // Hide or remove the notification element
+    ebrakeImg.style.opacity = "0";
+    ebrakeImg.style.display = "none"; // or removeChild(burnoutImg) if you want to remove the element from the DOM
+  }, 5000); // 5000 milliseconds = 5 seconds
+
+} else if (data.event == "burnout") {
+  var burnoutImg = document.getElementById("burnout-img");
+  burnoutImg.style.display = "flex";
+  burnoutImg.style.height = "100px";
+  burnoutImg.style.width = "400px";
+  burnoutImg.style.top = "80%";
+  burnoutImg.style.position = "absolute";
+  burnoutImg.style.transform = "translateX(100%)";
+  burnoutImg.style.opacity = "0";
+
+  setTimeout(function() {
+    burnoutImg.style.transform = "translateX(0%)";
+    burnoutImg.style.opacity = "1";
+    burnoutImg.style.transition = "all 1s ease-in-out";
+    notificationSound2.play();
+  }, 200);
+  setTimeout(function() {
+    // Hide or remove the notification element
+    burnoutImg.style.opacity = "0";
+    burnoutImg.style.display = "none"; // or removeChild(burnoutImg) if you want to remove the element from the DOM
+  }, 5000); // 5000 milliseconds = 5 seconds
+
+} else if (data.event == "bump") {
+  var bumpImg = document.getElementById("bump-img");
+  bumpImg.style.display = "flex";
+  bumpImg.style.height = "100px";
+  bumpImg.style.width = "400px";
+  bumpImg.style.top = "80%";
+  bumpImg.style.position = "absolute";
+  bumpImg.style.transform = "translateX(100%)";
+  bumpImg.style.opacity = "0";
+
+  setTimeout(function() {
+    bumpImg.style.transform = "translateX(0%)";
+    bumpImg.style.opacity = "1";
+    bumpImg.style.transition = "all 1s ease-in-out";
+    notificationSound2.play();
+  }, 200);
+  setTimeout(function() {
+    // Hide or remove the notification element
+    bumpImg.style.opacity = "0";
+    bumpImg.style.display = "none"; // or removeChild(burnoutImg) if you want to remove the element from the DOM
+  }, 5000); // 5000 milliseconds = 5 seconds
   
 } else if (data.event == "launchControlFailed") {
   var gasimgcont = document.getElementById("gas-imgcont");
